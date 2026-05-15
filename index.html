@@ -277,6 +277,145 @@ tw-passage[tags~="l11"] tw-link {
 
 tw-passage[tags~="l2"] .blue-text tw-link {
   color: blue !important;
+}
+
+
+/* ========== 📱 АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ ========== */
+/* Эти правила применяются ТОЛЬКО на экранах уже 768px и 480px */
+
+/* Планшеты и маленькие ноутбуки (до 768px) */
+@media (max-width: 768px) {
+  tw-passage[tags~="l1"],
+  tw-passage[tags~="l2"] {
+    font-size: 20px !important;
+    width: 90% !important;
+    max-width: 700px !important;
+    margin-left: 5% !important;
+    margin-right: auto !important;
+  }
+  
+  tw-passage[tags~="l1"] {
+    margin-top: 50vh !important;
+  }
+  
+  tw-passage[tags~="l6"],
+  tw-passage[tags~="l7"],
+  tw-passage[tags~="l8"] {
+    font-size: 15px !important;
+    width: 90% !important;
+    max-width: 550px !important;
+    margin-left: 5% !important;
+  }
+  
+  tw-passage[tags~="l9"] {
+    font-size: 20px !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
+  
+  tw-passage[tags~="l10"] {
+    font-size: 20px !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
+  
+  tw-passage[tags~="l11"] {
+    font-size: 15px !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-top: 100px !important;
+  }
+  
+  tw-passage[tags~="l12"],
+  tw-passage[tags~="l13"] {
+    font-size: 28px !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-top: 300px !important;
+  }
+  
+  tw-passage[tags~="l14"],
+  tw-passage[tags~="l15"] {
+    font-size: 28px !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-top: 150px !important;
+  }
+}
+
+/* Мобильные телефоны (до 480px) */
+@media (max-width: 480px) {
+  tw-passage[tags~="l1"],
+  tw-passage[tags~="l2"] {
+    font-size: 17px !important;
+    margin-top: 40vh !important;
+  }
+  
+  tw-passage[tags~="l3"],
+  tw-passage[tags~="l4"],
+  tw-passage[tags~="l5"] {
+    font-size: 15px !important;
+  }
+  
+  tw-passage[tags~="l6"],
+  tw-passage[tags~="l7"],
+  tw-passage[tags~="l8"] {
+    font-size: 14px !important;
+  }
+  
+  tw-passage[tags~="l9"] {
+    font-size: 18px !important;
+  }
+  
+  tw-passage[tags~="l10"] {
+    font-size: 18px !important;
+  }
+  
+  tw-passage[tags~="l11"] {
+    font-size: 14px !important;
+    margin-top: 80px !important;
+  }
+  
+  tw-passage[tags~="l12"],
+  tw-passage[tags~="l13"] {
+    font-size: 22px !important;
+    margin-top: 200px !important;
+  }
+  
+  tw-passage[tags~="l14"],
+  tw-passage[tags~="l15"] {
+    font-size: 22px !important;
+    margin-top: 120px !important;
+  }
+  
+  /* Ссылки на мобильных */
+  tw-link {
+    font-size: 15px !important;
+  }
+}
+
+/* Очень маленькие экраны (до 360px) */
+@media (max-width: 360px) {
+  tw-passage[tags~="l1"],
+  tw-passage[tags~="l2"] {
+    font-size: 15px !important;
+  }
+  
+  tw-passage[tags~="l12"],
+  tw-passage[tags~="l13"],
+  tw-passage[tags~="l14"],
+  tw-passage[tags~="l15"] {
+    font-size: 19px !important;
+  }
+}
+
+/* Общие правила для всех passage — предотвращают выход за границы экрана */
+tw-passage {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  box-sizing: border-box !important;
+  padding: 0 10px !important;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="l15" color="blue"></tw-tag><tw-passagedata pid="1" name="Бордовая  и фиолетовая  траектория" tags="l13" position="400,700" size="100,100">[[Траектория фиолетовая неверна]]</tw-passagedata><tw-passagedata pid="2" name="Бордовая и желтая траектория" tags="l12" position="525,700" size="100,100">[[Поздравляем! Вы сдали экзамен!]]</tw-passagedata><tw-passagedata pid="3" name="Движение на разворот" tags="l4" position="425,325" size="100,100">Не верно
 [[Пояснение не сдачи экзамена]]
 [[НАЧАТЬ ЭКЗАМЕН]]</tw-passagedata><tw-passagedata pid="4" name="Движение направо" tags="l5" position="600,200" size="100,100">Не верно
